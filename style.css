@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #17A0F3;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.analog-clock{
+   width: 500px;
+   height: 500px;
+   background-color: #17A0F3;
+   border-radius: 50%;
+   border: 30px solid #fff;
+
+}
+.needle{
+    --rotation:0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+   
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+    background-color: black;
+    z-index: 8;
+    border: 1px solid black;
+}
+.sec{
+    background-color: black;
+    width: 3px;
+    height: 28%;
+   
+}
+.min{
+    background-color: black;
+    width: 7px;
+    height: 27%;
+    
+}
+.hrs{
+    background-color: black;
+    width: 10px;
+    height: 25%;
+   
+}
